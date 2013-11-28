@@ -11,6 +11,10 @@ class PassengerTest < Minitest::Test
     @passenger = Passenger.new
   end
 
+  def test_default_preference
+    refute passenger.preference
+  end
+
   def test_preference_attribute
     passenger.preference = :window
     assert_equal :window, passenger.preference

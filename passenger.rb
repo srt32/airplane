@@ -1,5 +1,6 @@
 class Passenger
 
-  attr_accessor :preference, :boarding_position
+  attr_accessor :seat_preference,
+                :boarding_position
 
 end

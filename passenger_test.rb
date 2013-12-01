@@ -12,12 +12,12 @@ class PassengerTest < Minitest::Test
   end
 
   def test_default_preference
-    refute passenger.preference
+    refute passenger.seat_preference
   end
 
   def test_preference_attribute
-    passenger.preference = :window
-    assert_equal :window, passenger.preference
+    passenger.seat_preference = :window
+    assert_equal :window, passenger.seat_preference
   end
 
   def test_boarding_position_attribute

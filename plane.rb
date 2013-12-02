@@ -8,6 +8,10 @@ class Plane
     @rows = create_rows(num_rows)
   end
 
+  def total_seats
+    rows.flat_map(&:seats).count
+  end
+
 private
 
   def create_rows(count)

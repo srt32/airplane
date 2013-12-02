@@ -39,7 +39,7 @@ class PlaneTest < Minitest::Test
 
   def test_correct_number_total_seats
     correct_num = 30 * 6
-    assert_equal correct_num, plane.rows.flat_map(&:seats).count
+    assert_equal correct_num, plane.total_seats
   end
 
 end

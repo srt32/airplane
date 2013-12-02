@@ -1,1 +1,5 @@
 A set of classes used to model a plane to predict probability of recieving an aisle seat given boarding position
+
+###Tests
+
+Run the tests using the default Rake task:  `rake`

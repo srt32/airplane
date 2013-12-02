@@ -25,4 +25,12 @@ class PassengerTest < Minitest::Test
     assert_equal 1, passenger.boarding_position
   end
 
+  def test_seat_attribute_defaults_to_nil
+    refute passenger.seat
+  end
+
+  def test_status_defaults_to_unknown
+    assert_equal :unknown, passenger.status
+  end
+
 end

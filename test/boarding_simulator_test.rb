@@ -2,9 +2,9 @@ require 'pry'
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './boarding_simulator'
-require './plane'
-require './passenger_generator'
+require './lib/boarding_simulator'
+require './lib/plane'
+require './lib/passenger_generator'
 
 class BoardingSimulatorTest < Minitest::Test
 

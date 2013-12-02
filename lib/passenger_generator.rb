@@ -1,4 +1,4 @@
-require './passenger'
+require './lib/passenger'
 
 class PassengerGenerator
 

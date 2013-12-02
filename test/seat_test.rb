@@ -1,7 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './seat'
+require './lib/seat'
 
 class SeatTest < Minitest::Test
 

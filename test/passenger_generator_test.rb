@@ -1,9 +1,9 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './passenger_generator'
-require './plane'
-require './passenger'
+require './lib/passenger_generator'
+require './lib/plane'
+require './lib/passenger'
 
 class PassengerGeneratorTest < Minitest::Test
 

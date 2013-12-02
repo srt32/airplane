@@ -1,7 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './row'
+require './lib/row'
 
 class RowTest < Minitest::Test
 

@@ -1,7 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './plane'
+require './lib/plane'
 
 class PlaneTest < Minitest::Test
 

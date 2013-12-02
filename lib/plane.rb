@@ -1,4 +1,4 @@
-require './row'
+require './lib/row'
 
 class Plane
 

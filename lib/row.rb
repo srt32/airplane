@@ -1,4 +1,4 @@
-require './seat'
+require './lib/seat'
 
 class Row
 

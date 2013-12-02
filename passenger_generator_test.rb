@@ -12,9 +12,9 @@ class PassengerGeneratorTest < Minitest::Test
               :plane
 
   def setup
-    @pg = PassengerGenerator.new
     @plane = Plane.new(30)
-    @passengers = pg.generate_for(plane)
+    @pg = PassengerGenerator.new(plane)
+    @passengers = pg.generate_passengers
   end
 
   def test_creates_correct_number_of_seats_for_plane
@@ -24,12 +24,18 @@ class PassengerGeneratorTest < Minitest::Test
 
   def test_assigns_passenger_seat_preferences
     seat_prefs_chosen = passengers.map(&:seat_preference)[0..4]
-    more_passengers = pg.generate_for(plane)
+    more_passengers = pg.generate_passengers
     second_seats_prefs_chosen = more_passengers.map(&:seat_preference)[0..4]
     alikes = seat_prefs_chosen.zip(second_seats_prefs_chosen).select do |pair|
       pair.first == pair.last
     end
     refute_equal 5, alikes.count
   end
+
+  def test_assigns_passenger_boarding_position
+    assigned_boarding_positions = passengers.map(&:boarding_position)
+    assert_equal (1..plane.total_seats).to_a, assigned_boarding_positions.sort
+  end
+  # NOTE: boarding_postion is not assigned randomly, it is assigned in order
 
 end

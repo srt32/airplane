@@ -6,8 +6,10 @@ class Passenger
                 :status
 
   def initialize
+    foo = true
+
     @seat_preference = :indifferent
     @status = :unknown
   end
-
+  
 end

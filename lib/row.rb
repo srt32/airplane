@@ -2,7 +2,7 @@ require './lib/seat'
 
 class Row
 
-  attr_reader :seats
+  attr_reader :seats  
 
   def initialize(row_num)
     @seats = generate_row(row_num)

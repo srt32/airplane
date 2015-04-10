@@ -1,0 +1,2 @@
+myFunc = ->
+  'single quotes' + "double"

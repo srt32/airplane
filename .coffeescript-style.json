@@ -3,6 +3,6 @@
     "level": "error"
   },
   "no_trailing_whitespace": {
-    "level": "ignore"
+    "level": "error"
   }
 }

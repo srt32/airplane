@@ -1,0 +1,8 @@
+{
+  "no_unnecessary_double_quotes": {
+    "level": "error"
+  },
+  "no_trailing_whitespace": {
+    "level": "error"
+  }
+}
